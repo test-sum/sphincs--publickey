@@ -22,8 +22,8 @@ bool file_exists(const std::string &filename) {
 int main() {
     OQS_SIG *sig = nullptr; // Declare sig here to ensure it's available throughout the function.
     try {
-        //sig = OQS_SIG_new(OQS_SIG_alg_sphincs_shake_128f_simple);
-          OQS_SIG *sig = OQS_SIG_new(OQS_SIG_alg_sphincs_shake_128f_simple);
+        //sig = OQS_SIG_new(OQS_SIG_alg_sphincs_shake_256f_simple);
+          OQS_SIG *sig = OQS_SIG_new(OQS_SIG_alg_sphincs_shake_256f_simple);
 
         if (!sig) {
             throw std::runtime_error("SPHINCS+ initialization failed. This could be due to an unsupported algorithm variant or an issue with the liboqs library.");
