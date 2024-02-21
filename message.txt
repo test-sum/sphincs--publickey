@@ -1,0 +1,11 @@
+I have been experimenting with various Post Quantum Digital Signature schemes. 
+The first 2 are Falcon, and Sphincs+. Falcon is a Lattice based algorythim, while Sphincs+ uses a hash based system. 
+
+It seems that most of the Post Quantum algoryhims use Lattices, so it makes sense in my mind that Sphincs+(being hash-based) is a good choice for Digital Signatures, effectively load balancing some of that risk. 
+
+In order to use these algorithims I had to write it C++( as the PQC libraries are in C++)
+
+Anyway, I've signed this post with using Sphincs+. The keys produced by  liboqs library are binary. So I've converted these into Bas64( as is general convention with DER > PEM, which I expect will continue to get used)
+
+
+
